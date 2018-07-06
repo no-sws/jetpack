@@ -30,6 +30,8 @@ cache:
 
 matrix:
   include:
+  - env: WP_TRAVISCI="yarn php:compatibility"
+  - env: WP_TRAVISCI="yarn php:lint"
   - env: WP_TRAVISCI="yarn lint"
   - env: WP_TRAVISCI="yarn test-client"
   - env: WP_TRAVISCI="yarn test-gui"
